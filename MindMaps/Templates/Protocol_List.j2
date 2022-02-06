@@ -1,0 +1,16 @@
+# {{ title }}
+## [URL]({{ URL }}) - {{ URL }}
+## Summary: {{ summary }}
+## Catagories 
+{%- for cat in category %}
+### {{ cat }}
+{%- endfor %}
+{{ content | replace("\\n\\n\\n","\n") | replace('== Layer','## Layer') | replace("==\\n"," \n### ") | replace("\\n"," \n### ") | replace ("\"This article lists protocols, categorized by the nearest layer in the Open Systems Interconnection model. This list is not exclusive to only the OSI protocol family.  Many of these protocols are originally based on the Internet Protocol Suite (TCP/IP) and other models and they often do not fit neatly into OSI layers.","")}}
+## Links
+{%- for link in links %}
+### {{ link }}
+{%- endfor %}
+## References
+{%- for reference in refs %}
+### [Reference]({{ reference }}) - {{ reference }}
+{%- endfor %}
