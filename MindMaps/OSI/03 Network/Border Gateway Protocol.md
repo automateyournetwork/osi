@@ -19,9 +19,6 @@
 ### Webarchive template wayback links
 ### Wikipedia articles needing clarification from October 2013
 ### Wikipedia articles that are too technical from April 2021
-## Summary
-### "Border Gateway Protocol (BGP) is a standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems (AS) on the Internet. BGP is classified as a path-vector routing protocol, and it makes routing decisions based on paths, network policies, or rule-sets configured by a network administrator.
-### BGP used for routing within an autonomous system is called Interior Border Gateway Protocol, Internal BGP (iBGP). In contrast, the Internet application of the protocol is called Exterior Border Gateway Protocol, External BGP (eBGP)."
 ### "Border Gateway Protocol (BGP) is a standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems (AS) on the Internet. BGP is classified as a path-vector routing protocol, and it makes routing decisions based on paths, network policies, or rule-sets configured by a network administrator. 
 ### BGP used for routing within an autonomous system is called Interior Border Gateway Protocol, Internal BGP (iBGP). In contrast, the Internet application of the protocol is called Exterior Border Gateway Protocol, External BGP (eBGP).
 ## History  
@@ -481,3 +478,10 @@
 ### [Reference](https://www.nanog.org/meetings/nanog39/presentations/bof-report.pdf) - https://www.nanog.org/meetings/nanog39/presentations/bof-report.pdf
 ### [Reference](https://conferences.sigcomm.org/sigcomm/2003/papers/p49-sobrinho.pdf) - https://conferences.sigcomm.org/sigcomm/2003/papers/p49-sobrinho.pdf
 ### [Reference](https://www.wikidata.org/wiki/Q11155#identifiers) - https://www.wikidata.org/wiki/Q11155#identifiers
+## Images
+### [Image](https://upload.wikimedia.org/wikipedia/commons/a/a8/BGP_FSM.svg) - https://upload.wikimedia.org/wikipedia/commons/a/a8/BGP_FSM.svg
+### [Image](https://upload.wikimedia.org/wikipedia/commons/c/ce/BGP_Table_growth.svg) - https://upload.wikimedia.org/wikipedia/commons/c/ce/BGP_Table_growth.svg
+### [Image](https://upload.wikimedia.org/wikipedia/commons/c/cf/Internet_AS.svg) - https://upload.wikimedia.org/wikipedia/commons/c/cf/Internet_AS.svg
+### [Image](https://upload.wikimedia.org/wikipedia/commons/6/6e/RR_BGP.svg) - https://upload.wikimedia.org/wikipedia/commons/6/6e/RR_BGP.svg
+### [Image](https://upload.wikimedia.org/wikipedia/en/f/f2/Edit-clear.svg) - https://upload.wikimedia.org/wikipedia/en/f/f2/Edit-clear.svg
+### [Image](https://upload.wikimedia.org/wikipedia/en/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg) - https://upload.wikimedia.org/wikipedia/en/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg

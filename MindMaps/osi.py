@@ -9,414 +9,364 @@ template_dir = 'Templates/'
 env = Environment(loader=FileSystemLoader(template_dir))
 
 # -------------------------
-# Templates
+# Template
 # -------------------------
 
-protocolList_template = env.get_template('Protocol_List.j2')
-layer_template = env.get_template('Layer.j2')
-
-protocolList = wikipedia.page("List of network protocols (OSI model)")
-wikiTitle = protocolList.title
-wikiURL = protocolList.url
-wikiContent = json.dumps(protocolList.content)
-wikiLinks = protocolList.links
-wikiSummary = protocolList.summary
-wikiCategory = protocolList.categories
-wikiReferences = protocolList.references
+wiki_template = env.get_template('wiki.j2')
 
 # -------------------------
-# Pass to Jinja2 Template 
+# Lists of Wiki Page Titles to Gather blocked by output folder
 # -------------------------
 
-parsed_output = protocolList_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
+generalPages=[
+    "List of network protocols (OSI model)",
+    "Computer_network",
+    "World_Wide_Web",
+    "History of the Internet"
+    ]
 
-# -------------------------
-# Save the markdown file
-# -------------------------
+layerOnePages=[
+    "Physical layer",
+    "Network_interface_controller"
+    ]
 
-with open("OSI/OSI Protocol List.md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
+layerTwoPages=[
+    "Data_link_layer",
+    "Frame_(networking)",
+    "Network_switch",
+    "Network_address",
+    "Local_area_network"
+    ]
 
+layerThreePages=[
+    "Network_layer",
+    "Network_packet",
+    "Packet_forwarding",
+    "Routing",
+    "Router_(computing)",
+    "IP_routing",
+    "Internet_Protocol",
+    "Static_Routing",
+    "Dynamic_routing",
+    "Routing_protocol",
+    "Routing_table",
+    "Open Shortest Path First",
+    "Routing_Information_Protocol",
+    "Border_Gateway_Protocol",
+    "Enhanced_Interior_Gateway_Routing_Protocol",
+    "Intermediate_system_to_intermediate_system",
+    "Interior_gateway_protocol",
+    "Interior_Gateway_Routing_Protocol",
+    "Exterior_gateway_protocol",
+    "Link_state_routing_protocol",
+    "Distance-vector_routing_protocol",
+    "Path-vector_routing_protocol",
+    "Unicast",
+    "Broadcasting_(networking)",
+    "Multicast",
+    "Anycast_(networking)",
+    "Metrics_(networking)",
+    "Multipath_routing",
+    "Equal-cost_multi-path_routing",
+    "Autonomous_system_(Internet)",
+    "ip address",
+    ]
 
-layerOne = wikipedia.page("Physical layer")
-wikiTitle = layerOne.title
-wikiURL = layerOne.url
-wikiContent = json.dumps(layerOne.content)
-wikiLinks = layerOne.links
-wikiSummary = json.dumps(layerOne.summary)
-wikiCategory = layerOne.categories
-wikiReferences = layerOne.references
+layerFourPages=[
+    "Transport_layer",
+    "Firewall (computing)"
+    "User_Datagram_Protocol",
+    "Transmission_Control_Protocol",
+    ]
 
-# -------------------------
-# Pass to Jinja2 Template 
-# -------------------------
+layerFivePages=[
+    "Session_layer"
+    ]
 
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
+layerSixPages=[
+    "Presentation_layer"
+    ]
 
-# -------------------------
-# Save the markdown file
-# -------------------------
+layerSevenPages=[
+    "Application_layer"
+    ]                
 
-with open("OSI/Layer 01.md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
-
-layerTwo = wikipedia.page("Data_link_layer")
-wikiTitle = layerTwo.title
-wikiURL = layerTwo.url
-wikiContent = json.dumps(layerTwo.content)
-wikiLinks = layerTwo.links
-wikiSummary = json.dumps(layerTwo.summary)
-wikiCategory = layerTwo.categories
-wikiReferences = layerTwo.references
-
-# -------------------------
-# Pass to Jinja2 Template 
-# -------------------------
-
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
-
-# -------------------------
-# Save the markdown file
-# -------------------------
-
-with open("OSI/Layer 02.md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
-
-layerThree = wikipedia.page("Network_layer")
-wikiTitle = layerThree.title
-wikiURL = layerThree.url
-wikiContent = json.dumps(layerThree.content)
-wikiLinks = layerThree.links
-wikiSummary = json.dumps(layerThree.summary)
-wikiCategory = layerThree.categories
-wikiReferences = layerThree.references
+for page in generalPages:
+    rawPage = wikipedia.page(f"{ page }")
+    wikiTitle = rawPage.title
+    wikiURL = rawPage.url
+    wikiContent = json.dumps(rawPage.content)
+    wikiLinks = rawPage.links
+    wikiSummary = rawPage.summary
+    wikiCategory = rawPage.categories
+    wikiReferences = rawPage.references
+    wikiImages = rawPage.images
+    print(page)
 
 # -------------------------
 # Pass to Jinja2 Template 
 # -------------------------
 
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
+    parsed_output = wiki_template.render(
+        title = wikiTitle,
+        summary = wikiSummary,
+        category = wikiCategory,
+        refs = wikiReferences,
+        URL = wikiURL,
+        content = wikiContent,
+        links = wikiLinks,
+        images = wikiImages
+    )
 
 # -------------------------
 # Save the markdown file
 # -------------------------
 
-with open("OSI/Layer 03.md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
+    with open(f"OSI/{ page }.md".replace('_',' '), "w", errors='ignore') as fh:
+        fh.write(parsed_output)               
+        fh.close()
 
-layerFour = wikipedia.page("Transport_layer")
-wikiTitle = layerFour.title
-wikiURL = layerFour.url
-wikiContent = json.dumps(layerFour.content)
-wikiLinks = layerFour.links
-wikiSummary = json.dumps(layerFour.summary)
-wikiCategory = layerFour.categories
-wikiReferences = layerFour.references
+for page in layerOnePages:
+    rawPage = wikipedia.page(f"{ page }")
+    wikiTitle = rawPage.title
+    wikiURL = rawPage.url
+    wikiContent = json.dumps(rawPage.content)
+    wikiLinks = rawPage.links
+    wikiSummary = rawPage.summary
+    wikiCategory = rawPage.categories
+    wikiReferences = rawPage.references
+    wikiImages = rawPage.images
+    print(page)
 
 # -------------------------
 # Pass to Jinja2 Template 
 # -------------------------
 
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
+    parsed_output = wiki_template.render(
+        title = wikiTitle,
+        summary = wikiSummary,
+        category = wikiCategory,
+        refs = wikiReferences,
+        URL = wikiURL,
+        content = wikiContent,
+        links = wikiLinks,
+        images = wikiImages
+    )
 
 # -------------------------
 # Save the markdown file
 # -------------------------
 
-with open("OSI/Layer 04.md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
+    with open(f"OSI/01 Physical/{ page }.md".replace('_',' '), "w") as fh:
+        fh.write(parsed_output)               
+        fh.close()
 
-layerFive = wikipedia.page("Session_layer")
-wikiTitle = layerFive.title
-wikiURL = layerFive.url
-wikiContent = json.dumps(layerFive.content)
-wikiLinks = layerFive.links
-wikiSummary = json.dumps(layerFive.summary)
-wikiCategory = layerFive.categories
-wikiReferences = layerFive.references
+for page in layerTwoPages:
+    rawPage = wikipedia.page(f"{ page }")
+    wikiTitle = rawPage.title
+    wikiURL = rawPage.url
+    wikiContent = json.dumps(rawPage.content)
+    wikiLinks = rawPage.links
+    wikiSummary = rawPage.summary
+    wikiCategory = rawPage.categories
+    wikiReferences = rawPage.references
+    wikiImages = rawPage.images
+    print(page)
 
 # -------------------------
 # Pass to Jinja2 Template 
 # -------------------------
 
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
+    parsed_output = wiki_template.render(
+        title = wikiTitle,
+        summary = wikiSummary,
+        category = wikiCategory,
+        refs = wikiReferences,
+        URL = wikiURL,
+        content = wikiContent,
+        links = wikiLinks,
+        images = wikiImages
+    )
 
 # -------------------------
 # Save the markdown file
 # -------------------------
 
-with open("OSI/Layer 05.md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
+    with open(f"OSI/02 Data/{ page }.md".replace('_',' '), "w") as fh:
+        fh.write(parsed_output)               
+        fh.close() 
 
-layerFive = wikipedia.page("Session_layer")
-wikiTitle = layerFive.title
-wikiURL = layerFive.url
-wikiContent = json.dumps(layerFive.content)
-wikiLinks = layerFive.links
-wikiSummary = json.dumps(layerFive.summary)
-wikiCategory = layerFive.categories
-wikiReferences = layerFive.references
+for page in layerThreePages:
+    rawPage = wikipedia.page(f"{ page }")
+    wikiTitle = rawPage.title
+    wikiURL = rawPage.url
+    wikiContent = json.dumps(rawPage.content)
+    wikiLinks = rawPage.links
+    wikiSummary = rawPage.summary
+    wikiCategory = rawPage.categories
+    wikiReferences = rawPage.references
+    wikiImages = rawPage.images
+    print(page)
 
 # -------------------------
 # Pass to Jinja2 Template 
 # -------------------------
 
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
+    parsed_output = wiki_template.render(
+        title = wikiTitle,
+        summary = wikiSummary,
+        category = wikiCategory,
+        refs = wikiReferences,
+        URL = wikiURL,
+        content = wikiContent,
+        links = wikiLinks,
+        images = wikiImages
+    )
 
 # -------------------------
 # Save the markdown file
-# -------------------------
+# -------------------------    
 
-with open("OSI/Layer 05.md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
+    with open(f"OSI/03 Network/{ page }.md".replace('_',' '), "w") as fh:
+        fh.write(parsed_output)               
+        fh.close()
 
-layerSix = wikipedia.page("Presentation_layer")
-wikiTitle = layerSix.title
-wikiURL = layerSix.url
-wikiContent = json.dumps(layerSix.content)
-wikiLinks = layerSix.links
-wikiSummary = json.dumps(layerSix.summary)
-wikiCategory = layerSix.categories
-wikiReferences = layerSix.references
+for page in layerFourPages:
+    rawPage = wikipedia.page(f"{ page }")
+    wikiTitle = rawPage.title
+    wikiURL = rawPage.url
+    wikiContent = json.dumps(rawPage.content)
+    wikiLinks = rawPage.links
+    wikiSummary = rawPage.summary
+    wikiCategory = rawPage.categories
+    wikiReferences = rawPage.references
+    wikiImages = rawPage.images
+    print(page)
 
 # -------------------------
 # Pass to Jinja2 Template 
 # -------------------------
 
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
+    parsed_output = wiki_template.render(
+        title = wikiTitle,
+        summary = wikiSummary,
+        category = wikiCategory,
+        refs = wikiReferences,
+        URL = wikiURL,
+        content = wikiContent,
+        links = wikiLinks,
+        images = wikiImages
+    )
 
 # -------------------------
 # Save the markdown file
-# -------------------------
+# -------------------------    
 
-with open("OSI/Layer 06.md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
+    with open(f"OSI/04 Transport/{ page }.md".replace('_',' '), "w") as fh:
+        fh.write(parsed_output)               
+        fh.close()
 
-layerSeven = wikipedia.page("Application_layer")
-wikiTitle = layerSeven.title
-wikiURL = layerSeven.url
-wikiContent = json.dumps(layerSeven.content)
-wikiLinks = layerSeven.links
-wikiSummary = json.dumps(layerSeven.summary)
-wikiCategory = layerSeven.categories
-wikiReferences = layerSeven.references
+for page in layerFivePages:
+    rawPage = wikipedia.page(f"{ page }")
+    wikiTitle = rawPage.title
+    wikiURL = rawPage.url
+    wikiContent = json.dumps(rawPage.content)
+    wikiLinks = rawPage.links
+    wikiSummary = rawPage.summary
+    wikiCategory = rawPage.categories
+    wikiReferences = rawPage.references
+    wikiImages = rawPage.images
+    print(page)
 
 # -------------------------
 # Pass to Jinja2 Template 
 # -------------------------
 
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
+    parsed_output = wiki_template.render(
+        title = wikiTitle,
+        summary = wikiSummary,
+        category = wikiCategory,
+        refs = wikiReferences,
+        URL = wikiURL,
+        content = wikiContent,
+        links = wikiLinks,
+        images = wikiImages
+    )
 
 # -------------------------
 # Save the markdown file
-# -------------------------
+# -------------------------    
 
-with open("OSI/Layer 07.md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
+    with open(f"OSI/05 Session/{ page }.md".replace('_',' '), "w") as fh:
+        fh.write(parsed_output)               
+        fh.close()
 
-ospf = wikipedia.page("Open Shortest Path First")
-wikiTitle = ospf.title
-wikiURL = ospf.url
-wikiContent = json.dumps(ospf.content)
-wikiLinks = ospf.links
-wikiSummary = json.dumps(ospf.summary)
-wikiCategory = ospf.categories
-wikiReferences = ospf.references
+for page in layerSixPages:
+    rawPage = wikipedia.page(f"{ page }")
+    wikiTitle = rawPage.title
+    wikiURL = rawPage.url
+    wikiContent = json.dumps(rawPage.content)
+    wikiLinks = rawPage.links
+    wikiSummary = rawPage.summary
+    wikiCategory = rawPage.categories
+    wikiReferences = rawPage.references
+    wikiImages = rawPage.images
+    print(page)
 
 # -------------------------
 # Pass to Jinja2 Template 
 # -------------------------
 
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
+    parsed_output = wiki_template.render(
+        title = wikiTitle,
+        summary = wikiSummary,
+        category = wikiCategory,
+        refs = wikiReferences,
+        URL = wikiURL,
+        content = wikiContent,
+        links = wikiLinks,
+        images = wikiImages
+    )
 
 # -------------------------
 # Save the markdown file
-# -------------------------
+# -------------------------    
 
-with open("Routing Protocols/Open Shortest Path First (OSPF).md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
+    with open(f"OSI/06 Presentation/{ page }.md".replace('_',' '), "w") as fh:
+        fh.write(parsed_output)               
+        fh.close()
 
-rip = wikipedia.page("Routing_Information_Protocol")
-wikiTitle = rip.title
-wikiURL = rip.url
-wikiContent = json.dumps(rip.content)
-wikiLinks = rip.links
-wikiSummary = json.dumps(rip.summary)
-wikiCategory = rip.categories
-wikiReferences = rip.references
+for page in layerSevenPages:
+    rawPage = wikipedia.page(f"{ page }")
+    wikiTitle = rawPage.title
+    wikiURL = rawPage.url
+    wikiContent = json.dumps(rawPage.content)
+    wikiLinks = rawPage.links
+    wikiSummary = rawPage.summary
+    wikiCategory = rawPage.categories
+    wikiReferences = rawPage.references
+    wikiImages = rawPage.images
+    print(page)
 
 # -------------------------
 # Pass to Jinja2 Template 
 # -------------------------
 
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
+    parsed_output = wiki_template.render(
+        title = wikiTitle,
+        summary = wikiSummary,
+        category = wikiCategory,
+        refs = wikiReferences,
+        URL = wikiURL,
+        content = wikiContent,
+        links = wikiLinks,
+        images = wikiImages
+    )
 
 # -------------------------
 # Save the markdown file
-# -------------------------
+# -------------------------    
 
-with open("Routing Protocols/Routing Information Protocol (RIP).md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
-
-bgp = wikipedia.page("Border_Gateway_Protocol")
-wikiTitle = bgp.title
-wikiURL = bgp.url
-wikiContent = json.dumps(bgp.content)
-wikiLinks = bgp.links
-wikiSummary = json.dumps(bgp.summary)
-wikiCategory = bgp.categories
-wikiReferences = bgp.references
-
-# -------------------------
-# Pass to Jinja2 Template 
-# -------------------------
-
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
-
-# -------------------------
-# Save the markdown file
-# -------------------------
-
-with open("Routing Protocols/Border Gateway Protocol (BGP).md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
-
-eigrp = wikipedia.page("Enhanced_Interior_Gateway_Routing_Protocol")
-wikiTitle = eigrp.title
-wikiURL = eigrp.url
-wikiContent = json.dumps(eigrp.content)
-wikiLinks = eigrp.links
-wikiSummary = json.dumps(eigrp.summary)
-wikiCategory = eigrp.categories
-wikiReferences = eigrp.references
-
-# -------------------------
-# Pass to Jinja2 Template 
-# -------------------------
-
-parsed_output = layer_template.render(
-    title = wikiTitle,
-    summary = wikiSummary,
-    category = wikiCategory,
-    refs = wikiReferences,
-    URL = wikiURL,
-    content = wikiContent,
-    links = wikiLinks
-)
-
-# -------------------------
-# Save the markdown file
-# -------------------------
-
-with open("Routing Protocols/Enhanced Interior Gateway Routing Protocol (EIGRP).md", "w") as fh:
-    fh.write(parsed_output)               
-    fh.close()
-
-#print(wikipedia.search("RIP"))
+    with open(f"OSI/07 Application/{ page }.md".replace('_',' '), "w") as fh:
+        fh.write(parsed_output)               
+        fh.close()

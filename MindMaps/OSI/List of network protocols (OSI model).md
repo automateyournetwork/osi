@@ -1,8 +1,5 @@
 # List of network protocols (OSI model)
 ## [URL](https://en.wikipedia.org/wiki/List_of_network_protocols_(OSI_model)) - https://en.wikipedia.org/wiki/List_of_network_protocols_(OSI_model)
-## Summary: This article lists protocols, categorized by the nearest layer in the Open Systems Interconnection model. This list is not exclusive to only the OSI protocol family.  Many of these protocols are originally based on the Internet Protocol Suite (TCP/IP) and other models and they often do not fit neatly into OSI layers.
-
-
 ## Catagories
 ### All articles needing additional references
 ### Articles needing additional references from August 2015
@@ -11,7 +8,7 @@
 ### Lists of network protocols
 ### Network protocols
 ### Short description is different from Wikidata
-
+### "This article lists protocols, categorized by the nearest layer in the Open Systems Interconnection model. This list is not exclusive to only the OSI protocol family.  Many of these protocols are originally based on the Internet Protocol Suite (TCP/IP) and other models and they often do not fit neatly into OSI layers.
 ## Layer 1 (Physical Layer)  
 ### Telephone network modems 
 ### IrDA physical layer 
@@ -77,7 +74,7 @@
 ### Virtual Extended Network (VEN) a protocol developed by iQuila. 
 ### VTP VLAN Trunking Protocol 
 ### VLAN Virtual Local Area Network
-== Network Topology  
+## Network Topology  
 ### Asynchronous Transfer Mode (ATM) 
 ### IS-IS, Intermediate System - Intermediate System (OSI) 
 ### SPB Shortest Path Bridging 
@@ -130,7 +127,7 @@
 ### QUIC
 ## Layer 5 (Session Layer)  
 ### This layer, presentation Layer and application layer are combined in TCP/IP model. 
-###  
+
 ### 9P Distributed file system protocol developed originally as part of Plan 9 
 ### ADSP AppleTalk Data Stream Protocol 
 ### ASP AppleTalk Session Protocol 
@@ -180,19 +177,19 @@
 ### TFTP 
 ### IMAP 
 ### Gemini
-== Other protocols  
+## Other protocols  
 ### Controller Area Network
-== Protocol description languages  
+## Protocol description languages  
 ### Abstract Syntax Notation One (ASN.1)
-== See also  
+## See also  
 ### List of automation protocols 
 ### Systems Network Architecture (SNA) developed by IBM 
 ### Distributed Systems Architecture (DSA) developed by Honeywell-Bull 
 ### Distributed System Security Architecture (DSSA) 
 ### OSI Model
-== Further reading  
+## Further reading  
 ### Network Protocols Handbook. Javvin Technologies. 2005. ISBN 978-0-9740945-2-6.
-== External links  
+## External links  
 ### Protocol Encapsulation Chart - A PDF file illustrating the relationship between common protocols and the OSI Reference Model. 
 ### Network Protocols Acronyms and Abbreviations - list of network protocols with abbreviations order by index."
 ## Links
@@ -426,3 +423,10 @@
 ### [Reference](https://web.archive.org/web/20120529200700/http://www.wildpackets.com/elements/misc/WP_encapsulation_chart.pdf) - https://web.archive.org/web/20120529200700/http://www.wildpackets.com/elements/misc/WP_encapsulation_chart.pdf
 ### [Reference](https://web.archive.org/web/20210201064044/https://www.itu.int/rec/T-REC-X.225-199511-I/en) - https://web.archive.org/web/20210201064044/https://www.itu.int/rec/T-REC-X.225-199511-I/en
 ### [Reference](https://www.jstor.org/action/doBasicSearch?Query=%22List+of+network+protocols%22+OSI+model&acc=on&wc=on) - https://www.jstor.org/action/doBasicSearch?Query=%22List+of+network+protocols%22+OSI+model&acc=on&wc=on
+## Images
+### [Image](https://upload.wikimedia.org/wikipedia/en/9/99/Question_book-new.svg) - https://upload.wikimedia.org/wikipedia/en/9/99/Question_book-new.svg
+### [Image](https://upload.wikimedia.org/wikipedia/en/archive/9/99/20210726203439%21Question_book-new.svg) - https://upload.wikimedia.org/wikipedia/en/archive/9/99/20210726203439%21Question_book-new.svg
+### [Image](https://upload.wikimedia.org/wikipedia/en/archive/9/99/20201004174738%21Question_book-new.svg) - https://upload.wikimedia.org/wikipedia/en/archive/9/99/20201004174738%21Question_book-new.svg
+### [Image](https://upload.wikimedia.org/wikipedia/en/archive/9/99/20171208221057%21Question_book-new.svg) - https://upload.wikimedia.org/wikipedia/en/archive/9/99/20171208221057%21Question_book-new.svg
+### [Image](https://upload.wikimedia.org/wikipedia/en/archive/9/99/20171207131032%21Question_book-new.svg) - https://upload.wikimedia.org/wikipedia/en/archive/9/99/20171207131032%21Question_book-new.svg
+### [Image](https://upload.wikimedia.org/wikipedia/en/archive/9/99/20160612140736%21Question_book-new.svg) - https://upload.wikimedia.org/wikipedia/en/archive/9/99/20160612140736%21Question_book-new.svg

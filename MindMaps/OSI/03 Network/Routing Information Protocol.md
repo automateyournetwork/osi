@@ -11,12 +11,6 @@
 ### Routing protocols
 ### Short description matches Wikidata
 ### Use dmy dates from September 2020
-## Summary
-### "The Routing Information Protocol (RIP) is one of the oldest distance-vector routing protocols which employs the hop count as a routing metric. RIP prevents routing loops by implementing a limit on the number of hops allowed in a path from source to destination. The largest number of hops allowed for RIP is 15, which limits the size of networks that RIP can support.
-### RIP implements the split horizon, route poisoning, and holddown mechanisms to prevent incorrect routing information from being propagated.
-### In RIPv1 routers broadcast updates with their routing table every 30 seconds. In the early deployments, routing tables were small enough that the traffic was not significant. As networks grew in size, however, it became evident there could be a massive traffic burst every 30 seconds, even if the routers had been initialized at random times.
-### In most networking environments, RIP is not the preferred choice of routing protocol, as its time to converge and scalability are poor compared to EIGRP, OSPF, or IS-IS. However, it is easy to configure, because RIP does not require any parameters, unlike other protocols.
-### RIP uses the User Datagram Protocol (UDP) as its transport protocol, and is assigned the reserved port number 520."
 ### "The Routing Information Protocol (RIP) is one of the oldest distance-vector routing protocols which employs the hop count as a routing metric. RIP prevents routing loops by implementing a limit on the number of hops allowed in a path from source to destination. The largest number of hops allowed for RIP is 15, which limits the size of networks that RIP can support. 
 ### RIP implements the split horizon, route poisoning, and holddown mechanisms to prevent incorrect routing information from being propagated. 
 ### In RIPv1 routers broadcast updates with their routing table every 30 seconds. In the early deployments, routing tables were small enough that the traffic was not significant. As networks grew in size, however, it became evident there could be a massive traffic burst every 30 seconds, even if the routers had been initialized at random times. 
@@ -216,3 +210,4 @@
 ### [Reference](https://datatracker.ietf.org/doc/html/rfc2453) - https://datatracker.ietf.org/doc/html/rfc2453
 ### [Reference](https://tools.ietf.org/html/rfc1058) - https://tools.ietf.org/html/rfc1058
 ### [Reference](https://man.openbsd.org/ripd.8) - https://man.openbsd.org/ripd.8
+## Images

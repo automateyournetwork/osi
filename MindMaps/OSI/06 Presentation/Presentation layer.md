@@ -8,10 +8,6 @@
 ### Short description matches Wikidata
 ### Use American English from March 2019
 ### Use mdy dates from March 2019
-## Summary
-### "In the seven-layer OSI model of computer networking, the presentation layer is layer 6 and serves as the data translator for the network. It is sometimes called the syntax layer.
-### 
-### "
 ### "In the seven-layer OSI model of computer networking, the presentation layer is layer 6 and serves as the data translator for the network. It is sometimes called the syntax layer.
 ## Description  
 ### Within the service layering semantics of the OSI network architecture, the presentation layer responds to service requests from the application layer and issues service requests to the session layer through a unique presentation service access point (PSAP).The presentation layer ensures the information that the application layer of one system sends out is readable by the application layer of another system. On the sending system it is responsible for conversion to standard, transmittable formats. On the receiving system it is responsible for the translation, formatting, and delivery of information for processing or display.  In theory, it relieves application layer protocols of concern regarding syntactical differences in data representation within the end-user systems. An example of a presentation service would be the conversion of an extended binary coded decimal interchange code (EBCDIC-coded) text computer file to an ASCII-coded file. If necessary, the presentation layer might be able to translate between multiple data formats using a common format. 
@@ -164,3 +160,4 @@
 ### [Reference](https://archive.org/details/datacomputercomm0000hura/page/671) - https://archive.org/details/datacomputercomm0000hura/page/671
 ### [Reference](https://archive.org/details/datacomputercomm0000hura/page/710) - https://archive.org/details/datacomputercomm0000hura/page/710
 ### [Reference](https://web.archive.org/web/20210201064044/https://www.itu.int/rec/T-REC-X.225-199511-I/en) - https://web.archive.org/web/20210201064044/https://www.itu.int/rec/T-REC-X.225-199511-I/en
+## Images

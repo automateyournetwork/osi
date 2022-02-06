@@ -5,9 +5,6 @@
 ### OSI model
 ### Short description is different from Wikidata
 ### Wikipedia articles incorporating text from the Federal Standard 1037C
-## Summary
-### "In the seven-layer OSI model of computer networking, the physical layer or layer 1 is the first and lowest layer; The layer most closely associated with the physical connection between devices. This layer may be implemented by a PHY chip.
-### The physical layer provides an electrical, mechanical, and procedural interface to the transmission medium. The shapes and properties of the electrical connectors, the frequencies to broadcast on, the line code to use and similar low-level parameters, are specified by the physical layer."
 ### "In the seven-layer OSI model of computer networking, the physical layer or layer 1 is the first and lowest layer; The layer most closely associated with the physical connection between devices. This layer may be implemented by a PHY chip. 
 ### The physical layer provides an electrical, mechanical, and procedural interface to the transmission medium. The shapes and properties of the electrical connectors, the frequencies to broadcast on, the line code to use and similar low-level parameters, are specified by the physical layer.
 ## Role  
@@ -348,3 +345,8 @@
 ### [Reference](https://datatracker.ietf.org/doc/html/rfc1122) - https://datatracker.ietf.org/doc/html/rfc1122
 ### [Reference](https://datatracker.ietf.org/doc/html/rfc1123) - https://datatracker.ietf.org/doc/html/rfc1123
 ### [Reference](https://en.wikibooks.org/wiki/CCNA_Certification/Physical_Layer) - https://en.wikibooks.org/wiki/CCNA_Certification/Physical_Layer
+## Images
+### [Image](https://upload.wikimedia.org/wikipedia/commons/a/a2/DP83825I_smaller.png) - https://upload.wikimedia.org/wikipedia/commons/a/a2/DP83825I_smaller.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/4/42/Elitegroup_761GX-M754_-_Realtek_RTL8201CL-5493.jpg) - https://upload.wikimedia.org/wikipedia/commons/4/42/Elitegroup_761GX-M754_-_Realtek_RTL8201CL-5493.jpg
+### [Image](https://upload.wikimedia.org/wikipedia/commons/f/f0/Micrel_KS8721CL_on_mainboard_of_Surf%40home_II-7778.jpg) - https://upload.wikimedia.org/wikipedia/commons/f/f0/Micrel_KS8721CL_on_mainboard_of_Surf%40home_II-7778.jpg
+### [Image](https://upload.wikimedia.org/wikipedia/en/6/62/PD-icon.svg) - https://upload.wikimedia.org/wikipedia/en/6/62/PD-icon.svg

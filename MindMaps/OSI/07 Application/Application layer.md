@@ -7,15 +7,10 @@
 ### Articles with short description
 ### Commons category link is on Wikidata
 ### OSI model
-### Pages with lower-case short description
 ### Short description is different from Wikidata
 ### Use American English from March 2019
 ### Use mdy dates from March 2019
-## Summary
-### "An application layer is an  the shared communications protocols and interface methods used by hosts in a communications network. An application layer abstraction is specified in both the Internet Protocol Suite (TCP/IP) and the OSI model. Although both models use the same term for their respective highest-level layer, the detailed definitions and purposes are different.
-### 
-### "
-### "An application layer is an  the shared communications protocols and interface methods used by hosts in a communications network. An application layer abstraction is specified in both the Internet Protocol Suite (TCP/IP) and the OSI model. Although both models use the same term for their respective highest-level layer, the detailed definitions and purposes are different.
+### "An application layer is an abstraction layer that specifies the shared communications protocols and interface methods used by hosts in a communications network. An application layer abstraction is specified in both the Internet Protocol Suite (TCP/IP) and the OSI model. Although both models use the same term for their respective highest-level layer, the detailed definitions and purposes are different.
 ## Internet protocol suite  
 ### In the Internet protocol suite, the application layer contains the communications protocols and interface methods used in process-to-process communications across an Internet Protocol (IP) computer network. The application layer only standardizes communication and depends upon the underlying transport layer protocols to establish host-to-host data transfer channels and manage the data exchange in a client\u2013server or peer-to-peer networking model. Though the TCP/IP application layer does not describe specific rules or data formats that applications must consider when communicating, the original specification (in RFC 1123) does rely on and recommend the robustness principle for application design.
 ## OSI model  
@@ -260,3 +255,6 @@ Learning materials related to Application layer at Wikiversity"
 ### [Reference](https://datatracker.ietf.org/doc/html/rfc1123) - https://datatracker.ietf.org/doc/html/rfc1123
 ### [Reference](https://tools.ietf.org/html/rfc1085) - https://tools.ietf.org/html/rfc1085
 ### [Reference](https://tools.ietf.org/rfc/rfc1095) - https://tools.ietf.org/rfc/rfc1095
+## Images
+### [Image](https://upload.wikimedia.org/wikipedia/commons/0/0b/Wikiversity_logo_2017.svg) - https://upload.wikimedia.org/wikipedia/commons/0/0b/Wikiversity_logo_2017.svg
+### [Image](https://upload.wikimedia.org/wikipedia/en/4/4a/Commons-logo.svg) - https://upload.wikimedia.org/wikipedia/en/4/4a/Commons-logo.svg

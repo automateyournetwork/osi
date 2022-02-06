@@ -19,11 +19,6 @@
 ### Short description is different from Wikidata
 ### Use American English from May 2020
 ### Use mdy dates from September 2017
-## Summary
-### "Open Shortest Path First (OSPF) is a routing protocol for Internet Protocol (IP) networks. It uses a link state routing (LSR) algorithm and falls into the group of interior gateway protocols (IGPs), operating within a single autonomous system (AS). 
-### OSPF gathers link state information from available routers and constructs a topology map of the network. The topology is presented as a routing table to the Internet Layer for routing packets by their destination IP address. OSPF supports Internet Protocol Version 4 (IPv4) and Internet Protocol Version 6 (IPv6) networks and supports the Classless Inter-Domain Routing (CIDR) addressing model.
-### OSPF is widely used in large enterprise networks. IS-IS, another LSR-based protocol, is more common in large service provider networks.
-### Originally designed in the 1980s, OSPF is defined for IPv4 in protocol version 2 by RFC 2328 (1998). The updates for IPv6 are specified as OSPF Version 3 in RFC 5340 (2008). OSPF supports the Classless Inter-Domain Routing (CIDR) addressing model."
 ### "Open Shortest Path First (OSPF) is a routing protocol for Internet Protocol (IP) networks. It uses a link state routing (LSR) algorithm and falls into the group of interior gateway protocols (IGPs), operating within a single autonomous system (AS).  
 ### OSPF gathers link state information from available routers and constructs a topology map of the network. The topology is presented as a routing table to the Internet Layer for routing packets by their destination IP address. OSPF supports Internet Protocol Version 4 (IPv4) and Internet Protocol Version 6 (IPv6) networks and supports the Classless Inter-Domain Routing (CIDR) addressing model. 
 ### OSPF is widely used in large enterprise networks. IS-IS, another LSR-based protocol, is more common in large service provider networks. 
@@ -481,3 +476,17 @@
 ### [Reference](https://www.nanog.org/meetings/abstract?id=1149) - https://www.nanog.org/meetings/abstract?id=1149
 ### [Reference](https://api.semanticscholar.org/CorpusID:7555753) - https://api.semanticscholar.org/CorpusID:7555753
 ### [Reference](https://www.wikidata.org/wiki/Q220169#identifiers) - https://www.wikidata.org/wiki/Q220169#identifiers
+## Images
+### [Image](https://upload.wikimedia.org/wikipedia/commons/8/83/OSPF-MPLS_VPN_figur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/8/83/OSPF-MPLS_VPN_figur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/4/41/OSPF-NSSA_figur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/4/41/OSPF-NSSA_figur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/9/97/OSPF-Totally_NSSA_figur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/9/97/OSPF-Totally_NSSA_figur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/5/58/OSPF-Totally_stubby_area_figur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/5/58/OSPF-Totally_stubby_area_figur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/e/ed/OSPF-Trasit_area_virtual_linkfigur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/e/ed/OSPF-Trasit_area_virtual_linkfigur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/5/5a/OSPF-Type-4_%26_Type-5_figur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/5/5a/OSPF-Type-4_%26_Type-5_figur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/8/89/OSPF-area0_area122_mutliarea_figur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/8/89/OSPF-area0_area122_mutliarea_figur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/b/b4/OSPF-area0_standalone_figur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/b/b4/OSPF-area0_standalone_figur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/6/62/OSPF-stubby_area_figur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/6/62/OSPF-stubby_area_figur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/0/07/OSPF-type3_Summary-LSAs_figur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/0/07/OSPF-type3_Summary-LSAs_figur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/e/e8/OSPF-type_1_figur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/e/e8/OSPF-type_1_figur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/commons/0/08/OSPF-type_2_Network-LSA_figur.drawio.png) - https://upload.wikimedia.org/wikipedia/commons/0/08/OSPF-type_2_Network-LSA_figur.drawio.png
+### [Image](https://upload.wikimedia.org/wikipedia/en/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg) - https://upload.wikimedia.org/wikipedia/en/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg

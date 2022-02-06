@@ -7,12 +7,6 @@
 ### Routing protocols
 ### Short description matches Wikidata
 ### Webarchive template wayback links
-## Summary
-### "Enhanced Interior Gateway Routing Protocol (EIGRP) is an advanced distance-vector routing protocol that is used on a computer network for automating routing decisions and configuration. The protocol was designed by Cisco Systems as a proprietary protocol, available only on Cisco routers. Functionality of EIGRP was converted to an open standard in 2013 and was published with informational status as RFC 7868 in 2016.
-### EIGRP is used on a router to share routes with other routers within the same autonomous system. Unlike other well known routing protocols, such as RIP, EIGRP only sends incremental updates, reducing the workload on the router and the amount of data that needs to be transmitted.
-### EIGRP replaced the Interior Gateway Routing Protocol (IGRP) in 1993. One of the major reasons for this was the change to classless IPv4 addresses in the Internet Protocol, which IGRP could not support.
-### 
-### "
 ### "Enhanced Interior Gateway Routing Protocol (EIGRP) is an advanced distance-vector routing protocol that is used on a computer network for automating routing decisions and configuration. The protocol was designed by Cisco Systems as a proprietary protocol, available only on Cisco routers. Functionality of EIGRP was converted to an open standard in 2013 and was published with informational status as RFC 7868 in 2016. 
 ### EIGRP is used on a router to share routes with other routers within the same autonomous system. Unlike other well known routing protocols, such as RIP, EIGRP only sends incremental updates, reducing the workload on the router and the amount of data that needs to be transmitted. 
 ### EIGRP replaced the Interior Gateway Routing Protocol (IGRP) in 1993. One of the major reasons for this was the change to classless IPv4 addresses in the Internet Protocol, which IGRP could not support.
@@ -461,3 +455,6 @@ IP-EIGRP topology entry for 10.0.0.1/32
 ### [Reference](https://web.archive.org/web/20180303041447/https://10-0-0-0-1.org/) - https://web.archive.org/web/20180303041447/https://10-0-0-0-1.org/
 ### [Reference](https://datatracker.ietf.org/doc/html/rfc7868) - https://datatracker.ietf.org/doc/html/rfc7868
 ### [Reference](https://www.wikidata.org/wiki/Q1091139#identifiers) - https://www.wikidata.org/wiki/Q1091139#identifiers
+## Images
+### [Image](https://upload.wikimedia.org/wikipedia/en/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg) - https://upload.wikimedia.org/wikipedia/en/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg
+### [Image](https://upload.wikimedia.org/wikipedia/en/archive/8/8a/20190821112659%21OOjs_UI_icon_edit-ltr-progressive.svg) - https://upload.wikimedia.org/wikipedia/en/archive/8/8a/20190821112659%21OOjs_UI_icon_edit-ltr-progressive.svg

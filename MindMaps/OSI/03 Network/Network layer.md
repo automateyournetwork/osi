@@ -8,10 +8,6 @@
 ### Articles with unsourced statements from November 2016
 ### OSI model
 ### Short description is different from Wikidata
-## Summary
-### "In the seven-layer OSI model of computer networking, the network layer is layer 3. The network layer is responsible for packet forwarding including routing through intermediate routers.
-### 
-### "
 ### "In the seven-layer OSI model of computer networking, the network layer is layer 3. The network layer is responsible for packet forwarding including routing through intermediate routers.
 ## Functions  
 ### The network layer provides the means of transferring variable-length network packets from a source to a destination host via one or more networks. Within the service layering semantics of the OSI network architecture, the network layer responds to service requests from the transport layer and issues service requests to the data link layer. 
@@ -155,3 +151,7 @@
 ### [Reference](https://www.itu.int/rec/T-REC-X.225-199511-I/en) - https://www.itu.int/rec/T-REC-X.225-199511-I/en
 ### [Reference](https://archive.org/details/computernetworks00tane_2) - https://archive.org/details/computernetworks00tane_2
 ### [Reference](https://web.archive.org/web/20210201064044/https://www.itu.int/rec/T-REC-X.225-199511-I/en) - https://web.archive.org/web/20210201064044/https://www.itu.int/rec/T-REC-X.225-199511-I/en
+## Images
+### [Image](https://upload.wikimedia.org/wikipedia/commons/a/a4/Text_document_with_red_question_mark.svg) - https://upload.wikimedia.org/wikipedia/commons/a/a4/Text_document_with_red_question_mark.svg
+### [Image](https://upload.wikimedia.org/wikipedia/commons/archive/a/a4/20201215012138%21Text_document_with_red_question_mark.svg) - https://upload.wikimedia.org/wikipedia/commons/archive/a/a4/20201215012138%21Text_document_with_red_question_mark.svg
+### [Image](https://upload.wikimedia.org/wikipedia/commons/archive/a/a4/20070810173321%21Text_document_with_red_question_mark.svg) - https://upload.wikimedia.org/wikipedia/commons/archive/a/a4/20070810173321%21Text_document_with_red_question_mark.svg
