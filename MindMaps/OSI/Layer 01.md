@@ -27,12 +27,12 @@
 ### To optimize reliability and efficiency, signal processing techniques such as equalization, training sequences and pulse shaping may be used. Error correction codes and techniques including forward error correction may be applied to further improve reliability. 
 ### Other topics associated with the physical layer include: bit rate; point-to-point, multipoint or point-to-multipoint line configuration; physical network topology, for example bus, ring, mesh or star network; serial or parallel communication; simplex, half duplex or full duplex transmission mode; and autonegotiation
 ## PHY  
-###  
+
 ### A PHY, an abbreviation for \"physical layer\", is an electronic circuit, usually implemented as an integrated circuit, required to implement physical layer functions of the OSI model in a network interface controller. 
 ### A PHY connects a link layer device (often called MAC as an acronym for medium access control) to a physical medium such as an optical fiber or copper cable. A PHY device typically includes both physical coding sublayer (PCS) and physical medium dependent (PMD) layer functionality.-PHY may also be used as a suffix to form a short name referencing a specific physical layer protocol, for example M-PHY.   
 ### Modular transceivers for fiber-optic communication (like the SFP family) complement a PHY chip and form the PMA sublayer.
 ## Ethernet physical transceiver  
-###  
+
 ### The Ethernet PHY is a component that operates at the physical layer of the OSI network model.  It implements the physical layer portion of the Ethernet. Its purpose is to provide analog signal physical access to the link. It is usually interfaced with a media-independent interface (MII) to a MAC chip in a microcontroller or another system that takes care of the higher layer functions.  
 ### More specifically, the Ethernet PHY is a chip that implements the hardware send and receive function of Ethernet frames; it interfaces between the analog domain of  Ethernet's line modulation and the digital domain of link-layer packet signaling.  The PHY usually does not handle MAC addressing, as that is the link layer's job.  Similarly, Wake-on-LAN and Boot ROM functionality is implemented in the network interface card (NIC), which may have PHY, MAC, and other functionality integrated into one chip or as separate chips. 
 ### Common ethernet interfaces include fiber, or two to four copper pairs for data communication. However, there now exists a new interface, called Single Pair Ethernet (SPE), which is able to utilize a single pair of copper wires while still communicating at the intended speeds. Texas Instruments DP83TD510E is an example of a PHY which uses SPE. 

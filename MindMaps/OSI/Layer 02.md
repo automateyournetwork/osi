@@ -31,14 +31,14 @@
 ### MAC may refer to the sublayer that determines who is allowed to access the media at any one time (e.g. CSMA/CD). Other times it refers to a frame structure delivered based on MAC addresses inside. 
 ### There are generally two forms of media access control: distributed and centralized. Both of these may be compared to communication between people. In a network made up of people speaking, i.e. a conversation, they will each pause a random amount of time and then attempt to speak again, effectively establishing a long and elaborate game of saying \"no, you first\". 
 ### The Media Access Control sublayer also performs frame synchronization, which determines the start and end of each frame of data in the transmission bitstream. It entails one of several methods: timing-based detection, character counting, byte stuffing, and bit stuffing. 
-###  
+
 ### The time-based approach expects a specified amount of time between frames. 
 ### Character counting tracks the count of remaining characters in the frame header. This method, however, is easily disturbed if this field is corrupted. 
 ### Byte stuffing precedes the frame with a special byte sequence such as DLE STX and succeeds it with DLE ETX. Appearances of DLE (byte value 0x10) have to be escaped with another DLE. The start and stop marks are detected at the receiver and removed as well as the inserted DLE characters. 
 ### Similarly, bit stuffing replaces these start and end marks with flags consisting of a special bit pattern (e.g. a 0, six 1 bits and a 0). Occurrences of this bit pattern in the data to be transmitted are avoided by inserting a bit. To use the example where the flag is 01111110, a 0 is inserted after 5 consecutive 1's in the data stream. The flags and the inserted 0's are removed at the receiving end. This makes for arbitrary long frames and easy synchronization for the recipient. The stuffed bit is added even if the following data bit is 0, which could not be mistaken for a sync sequence, so that the receiver can unambiguously distinguish stuffed bits from normal bits.
 ## Services  
 ### The services provided by the data link layer are: 
-###  
+
 ### Encapsulation of network layer data packets into frames 
 ### Frame synchronization 
 ### In the logical link control (LLC) sublayer: 
@@ -55,7 +55,7 @@
 ## Error detection and correction  
 ### In addition to framing, the data link layer may also detect and recover from transmission errors.  For a receiver to detect transmission errors, the sender must add redundant information as an error detection code to the frame sent.  When the receiver obtains a frame it verifies whether the received error detection code matches a recomputed error detection code. 
 ### An error detection code can be defined as a function that computes the r (amount of redundant bits) corresponding to each string of N total number of bits.  The simplest error detection code is the parity bit, which allows a receiver to detect transmission errors that have affected a single bit among the transmitted N + r bits.  If there are multiple flipped bits then the checking method might not be able to detect this on the receiver side. More advanced methods than parity error detection do exist providing higher grades of quality and features. 
-###  
+
 ### A simple example of how this works using metadata is transmitting the word \"HELLO\", by encoding each letter as its position in the alphabet. Thus, the letter A is coded as 1, B as 2, and so on as shown in the table on the right.  Adding up the resulting numbers yields 8 + 5 + 12 + 12 + 15  52, and 5 + 2  7 calculates the metadata.  Finally, the \"8 5 12 12 15 7\" numbers sequence is transmitted, which the receiver will see on its end if there are no transmission errors.  The receiver knows that the last number received is the error-detecting metadata and that all data before is the message, so the receiver can recalculate the above math and if the metadata matches it can be concluded that the data has been received error-free.  Though, if the receiver sees something like a \"7 5 12 12 15 7\" sequence (first element altered by some error), it can run the check by calculating 7 + 5 + 12 + 12 + 15  51 and 5 + 1  6, and discard the received data as defective since 6 does not equal 7. 
 ### More sophisticated error detection and correction algorithms are designed to reduce the risk that multiple transmission errors in the data would cancel each other out and go undetected. An algorithm that can even detect if the correct bytes are received but out of order is the cyclic redundancy check or CRC. This algorithm is often used in the data link layer.
 ## Protocol examples 

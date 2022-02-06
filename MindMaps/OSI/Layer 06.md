@@ -27,7 +27,7 @@
 ### Serialization
 ## Protocols  
 ### Protocols sometimes considered at this level (though perhaps not strictly adhering to the OSI model) include: 
-###  
+
 ### Apple Filing Protocol (AFP) 
 ### Independent Computing Architecture (ICA), the Citrix system core protocol 
 ### Lightweight Presentation Protocol (LPP) 

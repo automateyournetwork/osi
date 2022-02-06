@@ -16,19 +16,19 @@
 ## Functions  
 ### The network layer provides the means of transferring variable-length network packets from a source to a destination host via one or more networks. Within the service layering semantics of the OSI network architecture, the network layer responds to service requests from the transport layer and issues service requests to the data link layer. 
 ### Functions of the network layer include: 
-###  
+
 ### Connectionless communication 
 ### For example, IP is connectionless, in that a data packet can travel from a sender to a recipient without the recipient having to send an acknowledgement. Connection-oriented protocols exist at other, higher layers of the OSI model. 
 ### Host addressing 
 ### Every host in the network must have a unique address that determines where it is. This address is normally assigned from a hierarchical system.  For example, you can be : 
-###  
+
 ### \"Fred Murphy\"                                                    to people in your house, 
 ### \"Fred Murphy, 1 Main Street\"                             to Dubliners, 
 ### \"Fred Murphy, 1 Main Street, Dublin\"                 to people in Ireland, 
 ### \"Fred Murphy, 1 Main Street, Dublin, Ireland\"    to people anywhere in the world. 
-###  
+
 ### On the Internet, addresses are known as IP addresses (Internet Protocol). 
-###  
+
 ### Message forwarding 
 ### Since many networks are partitioned into subnetworks and connect to other networks for wide-area communications, networks use specialized hosts, called gateways or routers, to forward packets between networks.
 ## Relation to TCP/IP model  
@@ -36,7 +36,7 @@
 ## Protocols  
 ### The following are examples of protocols operating at the network layer.
 ## References  
-###  
+
 ### Tanenbaum, Andrew S. (2003). Computer networks. Upper Saddle River, New Jersey: Prentice Hall. ISBN 0-13-066102-3.
 ## External links  
 ### OSI Reference Model\u2014The ISO Model of Architecture for Open Systems Interconnection, Hubert Zimmermann, IEEE Transactions on Communications, vol. 28, no. 4, April 1980, pp. 425 \u2013 432. (PDF-Datei; 776 kB)"

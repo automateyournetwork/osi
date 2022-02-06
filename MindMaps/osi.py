@@ -294,3 +294,129 @@ parsed_output = layer_template.render(
 with open("OSI/Layer 07.md", "w") as fh:
     fh.write(parsed_output)               
     fh.close()
+
+ospf = wikipedia.page("Open Shortest Path First")
+wikiTitle = ospf.title
+wikiURL = ospf.url
+wikiContent = json.dumps(ospf.content)
+wikiLinks = ospf.links
+wikiSummary = json.dumps(ospf.summary)
+wikiCategory = ospf.categories
+wikiReferences = ospf.references
+
+# -------------------------
+# Pass to Jinja2 Template 
+# -------------------------
+
+parsed_output = layer_template.render(
+    title = wikiTitle,
+    summary = wikiSummary,
+    category = wikiCategory,
+    refs = wikiReferences,
+    URL = wikiURL,
+    content = wikiContent,
+    links = wikiLinks
+)
+
+# -------------------------
+# Save the markdown file
+# -------------------------
+
+with open("Routing Protocols/Open Shortest Path First (OSPF).md", "w") as fh:
+    fh.write(parsed_output)               
+    fh.close()
+
+rip = wikipedia.page("Routing_Information_Protocol")
+wikiTitle = rip.title
+wikiURL = rip.url
+wikiContent = json.dumps(rip.content)
+wikiLinks = rip.links
+wikiSummary = json.dumps(rip.summary)
+wikiCategory = rip.categories
+wikiReferences = rip.references
+
+# -------------------------
+# Pass to Jinja2 Template 
+# -------------------------
+
+parsed_output = layer_template.render(
+    title = wikiTitle,
+    summary = wikiSummary,
+    category = wikiCategory,
+    refs = wikiReferences,
+    URL = wikiURL,
+    content = wikiContent,
+    links = wikiLinks
+)
+
+# -------------------------
+# Save the markdown file
+# -------------------------
+
+with open("Routing Protocols/Routing Information Protocol (RIP).md", "w") as fh:
+    fh.write(parsed_output)               
+    fh.close()
+
+bgp = wikipedia.page("Border_Gateway_Protocol")
+wikiTitle = bgp.title
+wikiURL = bgp.url
+wikiContent = json.dumps(bgp.content)
+wikiLinks = bgp.links
+wikiSummary = json.dumps(bgp.summary)
+wikiCategory = bgp.categories
+wikiReferences = bgp.references
+
+# -------------------------
+# Pass to Jinja2 Template 
+# -------------------------
+
+parsed_output = layer_template.render(
+    title = wikiTitle,
+    summary = wikiSummary,
+    category = wikiCategory,
+    refs = wikiReferences,
+    URL = wikiURL,
+    content = wikiContent,
+    links = wikiLinks
+)
+
+# -------------------------
+# Save the markdown file
+# -------------------------
+
+with open("Routing Protocols/Border Gateway Protocol (BGP).md", "w") as fh:
+    fh.write(parsed_output)               
+    fh.close()
+
+eigrp = wikipedia.page("Enhanced_Interior_Gateway_Routing_Protocol")
+wikiTitle = eigrp.title
+wikiURL = eigrp.url
+wikiContent = json.dumps(eigrp.content)
+wikiLinks = eigrp.links
+wikiSummary = json.dumps(eigrp.summary)
+wikiCategory = eigrp.categories
+wikiReferences = eigrp.references
+
+# -------------------------
+# Pass to Jinja2 Template 
+# -------------------------
+
+parsed_output = layer_template.render(
+    title = wikiTitle,
+    summary = wikiSummary,
+    category = wikiCategory,
+    refs = wikiReferences,
+    URL = wikiURL,
+    content = wikiContent,
+    links = wikiLinks
+)
+
+# -------------------------
+# Save the markdown file
+# -------------------------
+
+with open("Routing Protocols/Enhanced Interior Gateway Routing Protocol (EIGRP).md", "w") as fh:
+    fh.write(parsed_output)               
+    fh.close()
+
+#print(wikipedia.search("RIP"))
